@@ -101,8 +101,11 @@ const LayoutIndex = props => {
             {/* 英雄区 */}
             {siteConfig('PROXIO_HERO_ENABLE', true, CONFIG) && <Hero {...props} />}
 
-            {/* 【已移动】团队介绍 / 关于作者 */}
+            {/* 团队介绍 / 关于作者 */}
             {siteConfig('PROXIO_ABOUT_ENABLE', true, CONFIG) && <Team />}
+
+            {/* 生涯 */}
+            {siteConfig('PROXIO_CAREER_ENABLE', true, CONFIG) && <Career />}
 
             {/* 公告 */}
             {siteConfig('PROXIO_ANNOUNCEMENT_ENABLE', true, CONFIG) && <Announcement
@@ -112,7 +115,7 @@ const LayoutIndex = props => {
                 } />
                 }
 
-            {/* 【已下移】博文列表 / 作品 */}
+            {/* 博文列表 / 作品项目 */}
             {siteConfig('PROXIO_BLOG_ENABLE', true, CONFIG) && (
                 <>
                     <Blog posts={posts} />
@@ -128,9 +131,6 @@ const LayoutIndex = props => {
 
             {/* 合作伙伴 */}
             {siteConfig('PROXIO_BRANDS_ENABLE', true, CONFIG) && <Brand />}
-
-            {/* 生涯 */}
-            {siteConfig('PROXIO_CAREER_ENABLE', true, CONFIG) && <Career />}
 
             {/* 产品特性 */}
             {siteConfig('PROXIO_FEATURE_ENABLE', true, CONFIG) && <Features />}
