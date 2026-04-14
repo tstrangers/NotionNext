@@ -3,7 +3,7 @@
  */
 const CONFIG = {
   PROXIO_WELCOME_COVER_ENABLE: true, //是否显示页面进入的欢迎文字
-  PROXIO_WELCOME_TEXT: '欢迎来到此网站，点击任意位置进入', // 欢迎文字，留空则不启用
+  PROXIO_WELCOME_TEXT: 'wellcome', // 欢迎文字，留空则不启用
 
   // 英雄区块导航
   PROXIO_HERO_ENABLE: true, // 开启英雄区
@@ -20,12 +20,6 @@ const CONFIG = {
   // 英雄区配图，如需隐藏，改为空值即可 ''
   PROXIO_HERO_BANNER_IMAGE: '', // hero区背景，默认是获取Notion背景，如需另外配置图片可以填写在这里
   PROXIO_HERO_BANNER_IFRAME_URL: '', // hero背景区内嵌背景网页 ，可以配置一个网页地址，例如动画网页https://my.spline.design/untitled-b0c6e886227646c34afc82cdc6de4ca2/
-
-  // 文章区块
-  PROXIO_BLOG_ENABLE: true, // 首页博文区块开关
-  PROXIO_BLOG_TITLE: '作品',
-  PROXIO_BLOG_COUNT: 4, // 首页博文区块展示前4篇文章
-  PROXIO_BLOG_TEXT_1: '我的最新动态',
 
   // 区块默认内容显示文章的summary文本，但也支持用自定义图片或logo德国替换掉占位显示内容
   PROXIO_BLOG_PLACEHOLDER_IMG_URL_1: '', // 填写要替换成的图片，支持图床或直接上传到项目中，示例  /images/feature-1.webp
@@ -86,6 +80,12 @@ const CONFIG = {
     }
   ],
 
+  // 文章区块
+  PROXIO_BLOG_ENABLE: true, // 首页博文区块开关
+  PROXIO_BLOG_TITLE: '作品',
+  PROXIO_BLOG_COUNT: 4, // 首页博文区块展示前4篇文章
+  PROXIO_BLOG_TEXT_1: '我的最新动态',
+  
   // 首页用户测评区块
   PROXIO_TESTIMONIALS_ENABLE: true, // 测评区块开关
   PROXIO_TESTIMONIALS_TITLE: '用户反馈',
