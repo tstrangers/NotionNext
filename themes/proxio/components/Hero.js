@@ -10,6 +10,12 @@ import { siteConfig } from '@/lib/config'
 import CONFIG from '../config'
 import SmartLink from '@/components/SmartLink'
 
+/* eslint-disable @next/next/no-img-element */
+import LazyImage from '@/components/LazyImage'
+import { siteConfig } from '@/lib/config'
+import CONFIG from '../config'
+import SmartLink from '@/components/SmartLink'
+
 /**
  * 英雄大图区块
  */
@@ -17,7 +23,8 @@ export const Hero = props => {
   const config = props?.NOTION_CONFIG || CONFIG
   const pageCover = props?.siteInfo?.pageCover
 
-  // 🔥 强制优先使用 Notion 站点封面
+  // 🔥 核心修改：强制优先使用 Notion 站点封面
+  // 只要 Notion 首页设置了封面，这里就一定会用它
   const bannerImage = pageCover
 
   const bannerIframe = siteConfig('PROXIO_HERO_BANNER_IFRAME_URL', null, config)
