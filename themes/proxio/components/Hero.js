@@ -4,18 +4,6 @@ import { siteConfig } from '@/lib/config'
 import CONFIG from '../config'
 import SmartLink from '@/components/SmartLink'
 
-/* eslint-disable @next/next/no-img-element */
-import LazyImage from '@/components/LazyImage'
-import { siteConfig } from '@/lib/config'
-import CONFIG from '../config'
-import SmartLink from '@/components/SmartLink'
-
-/* eslint-disable @next/next/no-img-element */
-import LazyImage from '@/components/LazyImage'
-import { siteConfig } from '@/lib/config'
-import CONFIG from '../config'
-import SmartLink from '@/components/SmartLink'
-
 /**
  * 英雄大图区块
  */
@@ -23,9 +11,8 @@ export const Hero = props => {
   const config = props?.NOTION_CONFIG || CONFIG
   const pageCover = props?.siteInfo?.pageCover
 
-  // 🔥 核心修改：强制优先使用 Notion 站点封面
-  // 只要 Notion 首页设置了封面，这里就一定会用它
-  const bannerImage = pageCover
+  // 优先 Notion 封面
+  const bannerImage = pageCover || siteConfig('PROXIO_HERO_BANNER_IMAGE', null, config)
 
   const bannerIframe = siteConfig('PROXIO_HERO_BANNER_IFRAME_URL', null, config)
   const PROXIO_HERO_BUTTON_1_TEXT = siteConfig(
@@ -97,7 +84,7 @@ export const Hero = props => {
                   <li>
                     <SmartLink
                       href={siteConfig('PROXIO_HERO_BUTTON_2_URL', '')}
-                      className='inline-flex items-center justify-center rounded-2xl bg-white px-7 py-[14px] text-center text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-2'>
+                      className='inline-flex items-center justify-center rounded-2xl bg-white px-7 py-[14px] text-center text-base font-medium text-dark shadow-1 transition duration-300 ease-in-out hover:bg-gray-2'>
                       {PROXIO_HERO_BUTTON_2_ICON && (
                         <img className='mr-4 w-5' src={PROXIO_HERO_BUTTON_2_ICON} />
                       )}
