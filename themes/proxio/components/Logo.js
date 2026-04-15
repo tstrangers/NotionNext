@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable @next/next/no-html-link-for-pages */
 import LazyImage from '@/components/LazyImage'
-import { siteConfig } from '@/lib/config'
 import { useGlobal } from '@/lib/global'
 import throttle from 'lodash.throttle'
 import { useRouter } from 'next/router'
@@ -38,26 +37,27 @@ export const Logo = props => {
     return () => {
       window.removeEventListener('scroll', navBarScrollListener)
     }
-  }, [isDarkMode, router])
+  }, [isDarkMode, router, white])
 
   return (
     <div className='w-60 max-w-full px-4'>
       <div className='navbar-logo flex items-center w-full py-5 cursor-pointer'>
+        {/* 🔥 同步 Notion 图标 */}
         <LazyImage
           priority
           src={siteInfo?.icon}
           width={24}
           height={20}
-          alt={siteConfig('AUTHOR')}
+          alt={siteInfo?.title}
           className='mr-2 hidden md:inline-block'
         />
-        {/* logo文字 */}
+        {/* logo文字：🔥 同步 Notion 页面标题 */}
         <span
           onClick={() => {
             router.push('/')
           }}
           className={`${logoTextColor} logo dark:text-white py-1.5 header-logo-text whitespace-nowrap font-semibold`}>
-          {siteConfig('TITLE')}
+          {siteInfo?.title}
         </span>
       </div>
     </div>
