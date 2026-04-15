@@ -10,8 +10,8 @@ import SmartLink from '@/components/SmartLink'
 export const Hero = props => {
   const config = props?.NOTION_CONFIG || CONFIG
   const pageCover = props?.siteInfo?.pageCover
-  // 🔥 核心修改：优先 Notion 封面，配置图仅兜底
-  const bannerImage = pageCover || siteConfig('PROXIO_HERO_BANNER_IMAGE', null, config)
+  const bannerImage =
+    siteConfig('PROXIO_HERO_BANNER_IMAGE', null, config) || pageCover
   const bannerIframe = siteConfig('PROXIO_HERO_BANNER_IFRAME_URL', null, config)
   const PROXIO_HERO_BUTTON_1_TEXT = siteConfig(
     'PROXIO_HERO_BUTTON_1_TEXT',
@@ -60,13 +60,13 @@ export const Hero = props => {
             <div
               className='hero-content wow fadeInUp mx-auto max-w-[780px] text-center'
               data-wow-delay='0.5s'>
-              {/* 主标题：同步 Notion 页面标题 */}
+              {/* 主标题 */}
               <h1 className='mb-6 text-3xl font-bold leading-snug sm:text-4xl sm:leading-snug lg:text-5xl lg:leading-[1.2]'>
-                {props?.siteInfo?.title || siteConfig('PROXIO_HERO_TITLE_1', null, config)}
+                {siteConfig('PROXIO_HERO_TITLE_1', null, config)}
               </h1>
-              {/* 次标题：同步 Notion 页面描述 */}
+              {/* 次标题 */}
               <p className='mx-auto mb-9 max-w-[600px] text-base font-medium  sm:text-lg sm:leading-[1.44]'>
-                {props?.siteInfo?.description || siteConfig('PROXIO_HERO_TITLE_2', null, config)}
+                {siteConfig('PROXIO_HERO_TITLE_2', null, config)}
               </p>
               {/* 按钮组 */}
               <ul className='mb-10 flex flex-wrap items-center justify-center gap-5'>
