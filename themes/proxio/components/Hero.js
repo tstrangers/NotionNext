@@ -10,10 +10,8 @@ import SmartLink from '@/components/SmartLink'
 export const Hero = props => {
   const config = props?.NOTION_CONFIG || CONFIG
   const pageCover = props?.siteInfo?.pageCover
-
-  // 🔥 这里已经安全修改：优先使用 Notion 封面图
-  const bannerImage = pageCover || siteConfig('PROXIO_HERO_BANNER_IMAGE', null, config)
-
+  const bannerImage =
+    siteConfig('PROXIO_HERO_BANNER_IMAGE', null, config) || pageCover
   const bannerIframe = siteConfig('PROXIO_HERO_BANNER_IFRAME_URL', null, config)
   const PROXIO_HERO_BUTTON_1_TEXT = siteConfig(
     'PROXIO_HERO_BUTTON_1_TEXT',
