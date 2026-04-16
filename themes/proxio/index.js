@@ -318,7 +318,7 @@ const Layout404 = props => {
 }
 
 /**
- * 博客列表
+ * 博客列表 - 建筑作品集 Snøhetta 风格
  */
 const LayoutPostList = props => {
     const { posts, category, tag } = props
@@ -326,65 +326,38 @@ const LayoutPostList = props => {
 
     return (
         <>
-            {/* <!-- ====== Blog Section Start --> */}
-            <section className='bg-white pb-10 pt-20 dark:bg-dark lg:pb-20 lg:pt-[120px]'>
-                <div className='container mx-auto'>
-                    {/* 区块标题文字 */}
-                    <div className='-mx-4 flex flex-wrap justify-center'>
-                        <div className='w-full px-4'>
-                            <div className='mx-auto mb-[60px] max-w-[485px] text-center'>
-                                {slotTitle && (
-                                    <h2 className='mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]'>
-                                        {slotTitle}
-                                    </h2>
-                                )}
-
-                                {!slotTitle && (
-                                    <>
-                                        <span className='mb-2 block text-lg font-semibold text-primary'>
-                                            {siteConfig('PROXIO_BLOG_TITLE')}
-                                        </span>
-                                        <h2 className='mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl md:text-[40px] md:leading-[1.2]'>
-                                            {siteConfig('PROXIO_BLOG_TEXT_1')}
-                                        </h2>
-
-                                    </>
-                                )}
-                            </div>
-                        </div>
-                    </div>
-                    {/* 博客列表 此处优先展示4篇文章 */}
-                    <div className='-mx-4 flex flex-wrap'>
+            {/* <!-- ====== 建筑项目列表 Section Start --> */}
+            <section className='bg-white pb-20 pt-20 dark:bg-dark lg:pb-32 lg:pt-32'>
+                <div className='w-full max-w-none px-0'>
+                    {/* 项目列表 - 全屏大图流 */}
+                    <div className='space-y-24'>
                         {posts?.map((item, index) => {
                             return (
-                                <div key={index} className='w-full px-4 md:w-1/2 lg:w-1/3'>
-                                    <div
-                                        className='wow fadeInUp group mb-10'
-                                        data-wow-delay='.1s'>
-                                        <div className='mb-8 overflow-hidden rounded-[5px]'>
-                                            <SmartLink href={item?.href} className='block'>
-                                                <img
-                                                    src={item.pageCoverThumbnail}
-                                                    alt={item.title}
-                                                    className='w-full transition group-hover:rotate-6 group-hover:scale-125'
-                                                />
+                                <div key={index} className='w-full'>
+                                    {/* 项目大图 - 100% 宽度铺满 */}
+                                    <div className='w-full overflow-hidden'>
+                                        <SmartLink href={item?.href} className='block'>
+                                            <img
+                                                src={item.pageCoverThumbnail}
+                                                alt={item.title}
+                                                className='w-full h-auto object-cover transition-transform duration-700 hover:scale-105'
+                                            />
+                                        </SmartLink>
+                                    </div>
+                                    {/* 项目标题 + 简介 - 极简下方对齐 */}
+                                    <div className='max-w-7xl mx-auto px-6 mt-8'>
+                                        <h3>
+                                            <SmartLink
+                                                href={item?.href}
+                                                className='text-2xl font-normal text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-3xl lg:text-2xl xl:text-3xl transition-colors'>
+                                                {item.title}
                                             </SmartLink>
-                                        </div>
-                                        <div>
-                                            <span className='mb-6 inline-block rounded-[5px] bg-primary px-4 py-0.5 text-center text-xs font-medium leading-loose text-white'>
-                                                {item.publishDay}
-                                            </span>
-                                            <h3>
-                                                <SmartLink
-                                                    href={item?.href}
-                                                    className='mb-4 inline-block text-xl font-semibold text-dark hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl lg:text-xl xl:text-2xl'>
-                                                    {item.title}
-                                                </SmartLink>
-                                            </h3>
-                                            <p className='max-w-[370px] text-base text-body-color dark:text-dark-6'>
+                                        </h3>
+                                        {item.summary && (
+                                            <p className='mt-3 max-w-2xl text-base text-gray-500 dark:text-gray-400 leading-relaxed'>
                                                 {item.summary}
                                             </p>
-                                        </div>
+                                        )}
                                     </div>
                                 </div>
                             )
@@ -392,7 +365,7 @@ const LayoutPostList = props => {
                     </div>
                 </div>
             </section>
-            {/* <!-- ====== Blog Section End --> */}
+            {/* <!-- ====== 建筑项目列表 Section End --> */}
         </>
     )
 }
