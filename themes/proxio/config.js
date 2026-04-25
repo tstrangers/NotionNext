@@ -3,7 +3,7 @@
  */
 const CONFIG = {
   PROXIO_WELCOME_COVER_ENABLE: true, //是否显示页面进入的欢迎文字
-  PROXIO_WELCOME_TEXT: 'wellcome', // 欢迎文字，留空则不启用
+  PROXIO_WELCOME_TEXT: 'WELLCOME', // 欢迎文字，留空则不启用
 
   // 英雄区块导航
   PROXIO_HERO_ENABLE: true, // 开启英雄区
@@ -30,7 +30,7 @@ const CONFIG = {
   PROXIO_ANNOUNCEMENT_ENABLE: true, //公告文字区块
 
   // 特性区块
-  PROXIO_FEATURE_ENABLE: true, // 特性区块开关
+  PROXIO_FEATURE_ENABLE: false, // 特性区块开关
   PROXIO_FEATURE_TITLE: '为什么选我',
   PROXIO_FEATURE_TEXT_1: '我能让您的项目焕发光彩',
   PROXIO_FEATURE_TEXT_2: '丰富的案例经验，专业的技术服务，优质的沟通效率',
@@ -58,25 +58,25 @@ const CONFIG = {
 
   // 首页生涯区块
   PROXIO_CAREER_ENABLE: true, // 区块开关
-  PROXIO_CAREER_TITLE: '生涯',
-  PROXIO_CAREER_TEXT: '以下是我的职业生涯',
+  PROXIO_CAREER_TITLE: '工作经历',
+  PROXIO_CAREER_TEXT: '以下是我的工作经历',
 
   // 生涯内容卡牌 ，title是标题 ，bio是备注，text是详情
   PROXIO_CAREERS: [
     {
-      title: 'Freelance Architect',
-      bio: '2016-2020',
-      text: 'As a freelance architect, I worked on a range of residential and commercial projects, balancing form and function. I collaborated with clients and contractors to transform concepts into reality, ensuring each design was both aesthetically pleasing and structurally sound.'
+      title: '项目建筑师 | 上海泛至建筑设计咨询有限公司',
+      bio: '2024.09-2026.02',
+      text: ' 负责建筑方案全流程设计、AI 辅助创意迭代、效果图表达、模型搭建、图纸绘制及景观一体化设计；参与前期踏勘、方案策划、汇报沟通与项目管理，跨界拓展雕塑装置、展览空间、大地艺术设计。深度参与浮梁和美乡村、惠州产业更新、环两山建筑艺术展等落地项目，负责概念方案、扩初深化、跨专业协同、现场巡检与落地验收；参与冰岛可再生能源研究中心国际竞赛并获荣誉提名，探索建筑与游戏、沉浸式空间跨界创新。'
     },
     {
-      title: 'Product Designer at Spotify',
-      bio: '2020-2022',
-      text: 'At Spotify, I helped shape innovative features for millions of users globally. My focus was on creating seamless music discovery experiences, enhancing user interfaces, and optimizing cross-platform navigation, which led to an improved product flow and increased user satisfaction.'
+      title: '室内设计助理 | 上海慕雅建设工程有限公司',
+      bio: '2024.05-2024.08',
+      text: '使用 SU、ENS、CAD、PS 完成模型与效果图制作，运用 Midjourney、SD 进行 AI 渲染与 IP 设计，输出方案图文。'
     },
     {
-      title: 'Freelance Product Designer',
-      bio: '2022-Now',
-      text: 'Now I design user-centric products that align with client visions. As a freelance product designer, I collaborate with startups and established companies, crafting solutions that elevate user experiences and increase engagement across both digital and physical interfaces.'
+      title: '助理建筑师 | 上海应翔建筑设计有限公司',
+      bio: '2021.07-2021.08',
+      text: '参与别墅方案、自贸区总图 / 施工图、上海师大投标模型设计，输出 CAD、SU、PPT 成果。'
     }
   ],
 
@@ -87,7 +87,7 @@ const CONFIG = {
   PROXIO_BLOG_TEXT_1: '我的最新动态',
   
   // 首页用户测评区块
-  PROXIO_TESTIMONIALS_ENABLE: true, // 测评区块开关
+  PROXIO_TESTIMONIALS_ENABLE: false, // 测评区块开关
   PROXIO_TESTIMONIALS_TITLE: '用户反馈',
   PROXIO_TESTIMONIALS_TEXT_1: '我们的用户怎么说',
   PROXIO_TESTIMONIALS_TEXT_2:
@@ -152,7 +152,7 @@ const CONFIG = {
   ],
 
   //   FAQ 常见问题模块
-  PROXIO_FAQ_ENABLE: true, // 常见问题模块开关
+  PROXIO_FAQ_ENABLE: false, // 常见问题模块开关
   PROXIO_FAQ_TITLE: '常见问题解答',
   PROXIO_FAQ_TEXT_1: '有任何问题吗？请看这里',
   PROXIO_FAQ_TEXT_2: '我们收集了常见的用户疑问',
@@ -197,10 +197,10 @@ const CONFIG = {
   // 横向滚动文字
   PROXIO_BRANDS_ENABLE: true, // 滚动文字
   PROXIO_BRANDS: [
-    'Web Design',
-    'Logo Design',
-    'Mobile App Design',
-    'Product Design'
+    '建筑设计',
+    '空间设计',
+    'AIGC设计',
+    '雕塑设计'
   ],
 
   PROXIO_FOOTER_SLOGAN: '我们通过技术为品牌和公司创造数字体验。',
@@ -262,7 +262,7 @@ const CONFIG = {
   PROXIO_404_BACK: '回到主页',
 
   // 页面底部的行动呼吁模块
-  PROXIO_CTA_ENABLE: true,
+  PROXIO_CTA_ENABLE: false,
   PROXIO_CTA_TITLE: '与我建立联系',
   PROXIO_CTA_TITLE_2: '让我们立刻启动您的项目',
   PROXIO_CTA_DESCRIPTION:
