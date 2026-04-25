@@ -56,9 +56,12 @@ const LayoutBase = props => {
     const { children } = props
 
     // 加载wow动画
-    useEffect(() => {
-        loadWowJS()
-    }, [])
+   useEffect(() => {
+  const init = async () => {
+    await loadWowJS()
+  }
+  init()
+}, [])
 
     return (
         <div
