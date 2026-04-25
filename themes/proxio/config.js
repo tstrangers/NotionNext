@@ -178,18 +178,18 @@ const CONFIG = {
   // 关于作者区块
   PROXIO_ABOUT_ENABLE: true, // 关于作者区块区块开关
   PROXIO_ABOUT_TITLE: '关于作者',
-  PROXIO_ABOUT_TEXT_1: 'I am an Architect Turned Into a Product Designer',
+  PROXIO_ABOUT_TEXT_1: '建筑设计师 / 空间设计师 / AIGC 创意设计师',
   PROXIO_ABOUT_TEXT_2:
-    'With a background in architecture, I now apply my expertise to product design, blending aesthetics, functionality, and innovation. My goal is to create modern, user-focused designs that bring your vision to life.',
+    '我是一名建筑设计 + AIGC 双向创作的实践者，喜欢用创意和 AI 工具把想法落地。擅长空间设计、视觉表达与内容创作，能用各类建模软件，也会用 AI 做动画、广告、短剧这类动态内容。享受把灵感变成可看、可展示、可落地的真实成果。',
   PROXIO_ABOUT_PHOTO_URL: '/avatar.png',
-  PROXIO_ABOUT_KEY_1: '经验年限',
-  PROXIO_ABOUT_VAL_1: '10年+',
-  PROXIO_ABOUT_KEY_2: '客户',
-  PROXIO_ABOUT_VAL_2: '1000+',
-  PROXIO_ABOUT_KEY_3: '交付项目',
-  PROXIO_ABOUT_VAL_3: '5000+',
-  PROXIO_ABOUT_KEY_4: '累积创作时长（小时）',
-  PROXIO_ABOUT_VAL_4: '10000+',
+  PROXIO_ABOUT_KEY_1: '',
+  PROXIO_ABOUT_VAL_1: '建筑设计',
+  PROXIO_ABOUT_KEY_2: '',
+  PROXIO_ABOUT_VAL_2: '空间设计',
+  PROXIO_ABOUT_KEY_3: '',
+  PROXIO_ABOUT_VAL_3: 'AIGC设计',
+  PROXIO_ABOUT_KEY_4: '',
+  PROXIO_ABOUT_VAL_4: 'Vibe Coding',
 
   PROXIO_ABOUT_BUTTON_URL: '/about',
   PROXIO_ABOUT_BUTTON_TEXT: '关于我',
