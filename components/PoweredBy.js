@@ -7,7 +7,7 @@ import { siteConfig } from '@/lib/config'
 export default function PoweredBy(props) {
   return (
     <div className={`inline text-sm font-serif ${props.className || ''}`}>
-      © 2025 你的名字 All Rights Reserved.
+      王帅 All Rights Reserved.
     </div>
   )
 }
