@@ -51,7 +51,7 @@ export const Team = () => {
                                     className='px-4 py-2 rounded-3xl border dark:border-gray-200 border-[#333333] text-base font-medium text-dark hover:bg-gray-100 dark:text-white dark:hover:bg-white dark:hover:text-black duration-200'
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    download="简历+作品集.zip"
+                                    download="resume-portfolio.zip"
                                 >
                                     {siteConfig('PROXIO_ABOUT_BUTTON_TEXT')}
                                     <i className="pl-4 fa-solid fa-arrow-right"></i>
