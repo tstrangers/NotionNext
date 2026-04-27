@@ -213,12 +213,12 @@ const CONFIG = {
       name: '',
       menus: [
         {
-          title: 'T',
+          title: '',
           href: ''
         },
         {
           title: '',
-          href: 'https://www.tangly1024.com'
+          href: ''
         }
       ]
     },
