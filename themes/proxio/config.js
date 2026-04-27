@@ -191,8 +191,8 @@ const CONFIG = {
   PROXIO_ABOUT_KEY_4: '',
   PROXIO_ABOUT_VAL_4: 'Vibe Coding',
 
-  PROXIO_ABOUT_BUTTON_URL: '/about',
-  PROXIO_ABOUT_BUTTON_TEXT: '下载简历',
+  PROXIO_ABOUT_BUTTON_URL: '/简历+作品集.zip',
+  PROXIO_ABOUT_BUTTON_TEXT: '下载简历和作品',
 
   // 横向滚动文字
   PROXIO_BRANDS_ENABLE: true, // 滚动文字
