@@ -177,7 +177,7 @@ const CONFIG = {
 
   // 关于作者区块
   PROXIO_ABOUT_ENABLE: true, // 关于作者区块区块开关
-  PROXIO_ABOUT_TITLE: '关于作者',
+  PROXIO_ABOUT_TITLE: '个人简介',
   PROXIO_ABOUT_TEXT_1: '建筑设计师 / 空间设计师 / AIGC 创意设计师',
   PROXIO_ABOUT_TEXT_2:
     '我是一名建筑设计 + AIGC 双向创作的实践者，喜欢用创意和 AI 工具把想法落地。擅长空间设计、视觉表达与内容创作，熟练运用各类建模软件，也会用 AI 制作动画、广告、短剧这类动态内容。享受把灵感变成可看、可展示、可落地的真实成果。',
@@ -192,7 +192,7 @@ const CONFIG = {
   PROXIO_ABOUT_VAL_4: 'Vibe Coding',
 
   PROXIO_ABOUT_BUTTON_URL: '/about',
-  PROXIO_ABOUT_BUTTON_TEXT: '关于我',
+  PROXIO_ABOUT_BUTTON_TEXT: '下载简历',
 
   // 横向滚动文字
   PROXIO_BRANDS_ENABLE: true, // 滚动文字
