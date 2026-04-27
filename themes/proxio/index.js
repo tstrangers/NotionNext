@@ -104,17 +104,6 @@ const LayoutIndex = props => {
             {/* 团队介绍 / 关于作者 */}
             {siteConfig('PROXIO_ABOUT_ENABLE', true, CONFIG) && <Team />}
 
-            {/* 生涯 */}
-            {siteConfig('PROXIO_CAREER_ENABLE', true, CONFIG) && <Career />}
-
-            {/* 公告 */}
-            {siteConfig('PROXIO_ANNOUNCEMENT_ENABLE', true, CONFIG) && <Announcement
-                post={props?.notice}
-                className={
-                    'announncement text-center py-16'
-                } />
-                }
-
             {/* 博文列表 / 作品项目 */}
             {siteConfig('PROXIO_BLOG_ENABLE', true, CONFIG) && (
                 <>
@@ -128,6 +117,17 @@ const LayoutIndex = props => {
                     </div>
                 </>
             )}
+             
+            {/* 生涯 */}
+            {siteConfig('PROXIO_CAREER_ENABLE', true, CONFIG) && <Career />}
+
+            {/* 公告 */}
+            {siteConfig('PROXIO_ANNOUNCEMENT_ENABLE', true, CONFIG) && <Announcement
+                post={props?.notice}
+                className={
+                    'announncement text-center py-16'
+                } />
+                }
 
             {/* 合作伙伴 */}
             {siteConfig('PROXIO_BRANDS_ENABLE', true, CONFIG) && <Brand />}
