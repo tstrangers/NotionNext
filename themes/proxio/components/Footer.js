@@ -71,7 +71,7 @@ export const Footer = ({ title }) => {
                {/* 页脚 */}
         <div className='dark:text-gray-200 py-4 flex flex-col lg:flex-row justify-between items-center border-t border-gray-600'>
           <div className='flex gap-x-2'>
-            © 2026 {siteConfig('王帅')} All Rights Reserved.
+            © 2026 {siteConfig('AUTHOR')} All Rights Reserved.
           </div>
           <DarkModeButton className='dark:text-white' />
         </div>
