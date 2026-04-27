@@ -68,21 +68,12 @@ export const Footer = ({ title }) => {
           </div>
         </div>
 
-        {/* 页脚 */}
-        <div className='dark:text-gray-200 py-4 flex flex-col lg:flex-row  justify-between items-center border-t border-gray-600'>
-          <div className='flex gap-x-2 flex-wrap justify-between items-center'>
-            <CopyRightDate />
-            <PoweredBy />
+               {/* 页脚 */}
+        <div className='dark:text-gray-200 py-4 flex flex-col lg:flex-row justify-between items-center border-t border-gray-600'>
+          <div className='flex gap-x-2'>
+            © 2026 {siteConfig('王帅')} All Rights Reserved.
           </div>
-
           <DarkModeButton className='dark:text-white' />
-
-          <div className='flex justify-between items-center gap-x-2'>
-            <div className='flex items-center gap-x-4'>
-              <AnalyticsBusuanzi />
-              <SocialButton />
-            </div>
-          </div>
         </div>
 
         {/* 备案 */}
