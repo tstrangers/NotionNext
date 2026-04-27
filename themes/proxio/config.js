@@ -82,7 +82,7 @@ const CONFIG = {
 
   // 文章区块
   PROXIO_BLOG_ENABLE: true, // 首页博文区块开关
-  PROXIO_BLOG_TITLE: '作品',
+  PROXIO_BLOG_TITLE: '设计作品',
   PROXIO_BLOG_COUNT: 4, // 首页博文区块展示前4篇文章
   PROXIO_BLOG_TEXT_1: '我的最新动态',
   
@@ -210,37 +210,37 @@ const CONFIG = {
   // 页脚菜单
   PROXIO_FOOTER_LINKS: [
     {
-      name: '友情链接',
+      name: '',
       menus: [
         {
-          title: 'Tangly的学习笔记',
-          href: 'https://blog.tangly1024.com'
+          title: 'T',
+          href: ''
         },
         {
-          title: 'NotionNext',
+          title: '',
           href: 'https://www.tangly1024.com'
         }
       ]
     },
     {
-      name: '开发者',
+      name: '联系方式',
       menus: [
-        { title: 'Github', href: 'https://github.com/tangly1024/NotionNext' },
+        { title: '1049987821@qq.com', href: '' },
         {
-          title: '开发帮助',
-          href: 'https://docs.tangly1024.com/article/how-to-develop-with-notion-next'
+          title: '18236850436',
+          href: ''
         },
         {
-          title: '功能反馈',
-          href: 'https://github.com/tangly1024/NotionNext/issues/new/choose'
+          title: '',
+          href: ''
         },
         {
-          title: '技术讨论',
-          href: 'https://github.com/tangly1024/NotionNext/discussions'
+          title: '',
+          href: ''
         },
         {
-          title: '关于作者',
-          href: 'https://blog.tangly1024.com/about'
+          title: '',
+          href: ''
         }
       ]
     }
