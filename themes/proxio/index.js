@@ -105,6 +105,7 @@ const LayoutIndex = props => {
             {siteConfig('PROXIO_ABOUT_ENABLE', true, CONFIG) && <Team />}
 
             {/* 博文列表 / 作品项目 */}
+            <section id="works">  {/* 👈 就加这一行！ */}
             {siteConfig('PROXIO_BLOG_ENABLE', true, CONFIG) && (
                 <>
                     <Blog posts={posts} />
