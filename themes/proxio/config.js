@@ -196,7 +196,7 @@ title: 'AIGC建筑与数字内容全链路工作流搭建 | 独立设计师',
   PROXIO_ABOUT_TEXT_1: '建筑设计师 / 空间设计师 / AIGC 创意设计师',
   PROXIO_ABOUT_TEXT_2:
     '我是一名建筑设计 + AIGC 双向创作的实践者，喜欢用创意和 AI 工具把想法落地。擅长空间设计、视觉表达与内容创作，熟练运用各类建模软件，也会用 AI 制作动画、广告、短剧这类动态内容。享受把灵感变成可看、可展示、可落地的真实成果。',
-  PROXIO_ABOUT_PHOTO_URL: 'https://raw.githubusercontent.com/tstrangers/img-bed/main/20260329-DJI_20260329113153_0717_D.jpg',
+  PROXIO_ABOUT_PHOTO_URL: 'https://cdn.jsdelivr.net/gh/tstrangers/img-bed/Image%2064.jpg',
   PROXIO_ABOUT_KEY_1: '',
   PROXIO_ABOUT_VAL_1: '建筑设计',
   PROXIO_ABOUT_KEY_2: '',
