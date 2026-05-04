@@ -206,8 +206,8 @@ title: 'AIGC建筑与数字内容全链路工作流搭建 | 独立设计师',
   PROXIO_ABOUT_KEY_4: '',
   PROXIO_ABOUT_VAL_4: 'Vibe Coding',
 
-  PROXIO_ABOUT_BUTTON_URL: '/resume-portfolio.zip',
-  PROXIO_ABOUT_BUTTON_TEXT: '下载简历和作品',
+  PROXIO_ABOUT_BUTTON_URL: '/resume.zip',
+  PROXIO_ABOUT_BUTTON_TEXT: '下载简历',
 
   // 横向滚动文字
   PROXIO_BRANDS_ENABLE: true, // 滚动文字
